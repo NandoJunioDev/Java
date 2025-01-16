@@ -1,23 +1,71 @@
 public class Lutador {
+
+    //ATRIBUTOS
+
     private String nome;
     private String nacionalidade;
     private int idade;
     private double altura,peso;
     private String categoria;
+    private  int vitoria;
+    private  int derrota;
+    private int empate ;
+ // COSNTRUTOR
 
-    public Lutador(String nome, int idade, String nacionalidade, double altura, double peso) {
+    public Lutador(String nome, String nacionalidade, int idade, double altura,
+                    double peso,
+                     int vitoria, int derrota, int empate) {
+
+
+
         this.nome = nome;
-        this.idade = idade;
         this.nacionalidade = nacionalidade;
+        this.idade = idade;
         this.altura = altura;
-        this.peso = peso;
+        this.setPeso(peso);
+        this.vitoria = vitoria;
+        this.derrota = derrota;
+        this.empate = empate;
+    }
+
+
+    //METODOS
+
+
+    public void  apresentar(){
+        System.out.println("Lutador:" + getNome());
+        System.out.println("Nacionalidade:" + getNacionalidade());
+        System.out.println("Idade:" + getIdade());
+        System.out.println("Altura:" + getAltura());
+        System.out.println( "peso:"  + this.getPeso());
+        System.out.println("Categoria: " + this.getCategoria()) ;
+        System.out.println("vitorias:" + getVitoria());
+        System.out.println("Derrotas:" + getDerrota());
+        System.out.println("Empate:" + getEmpate());
+
+
+    }
+    public void status( ){
+        System.out.println("Lutador:" + getNome());
+        System.out.println("Nacionalidade:" + getNacionalidade());
+        System.out.println("Idade:" + getIdade());
+        System.out.println("Altura:" + getAltura());
+    }
+    public void ganharLuta(){
+        setVitoria(getVitoria() + 1);
+    }
+    public void perderLuta(){
+    setDerrota(getDerrota() + 1);
+    }
+    public void empatar(){
+        setEmpate(getEmpate() + 1);
     }
 
     public String getCategoria() {
         return categoria;
     }
 
-    public void setCategoria(String categoria) {
+    private  void setCategoria() {
         if ( peso < 52.6){
 
             categoria = "Invalido";
@@ -43,7 +91,7 @@ public class Lutador {
 
     public void setPeso(double peso) {
         this.peso = peso;
-        setCategoria();
+        this.setCategoria();
     }
 
     public double getAltura() {
@@ -76,5 +124,29 @@ public class Lutador {
 
     public void setNome(String nome) {
         this.nome = nome;
+    }
+
+    public int getVitoria() {
+        return vitoria;
+    }
+
+    public void setVitoria(int vitoria) {
+        this.vitoria = vitoria;
+    }
+
+    public int getDerrota() {
+        return derrota;
+    }
+
+    public void setDerrota(int derrota) {
+        this.derrota = derrota;
+    }
+
+    public int getEmpate() {
+        return empate;
+    }
+
+    public void setEmpate(int empate) {
+        this.empate = empate;
     }
 }
