@@ -20,10 +20,30 @@ public class Luta {
 
 
     public void lutar(){
-        if ( getAprovada() == true ){
-            desafiado.apresentar();
-            desafiante.apresentar();
-            vencedor = new  Random();
+        if ( this.aprovada ){
+            System.out.println("###### Desafiado ########");
+            this.desafiado.apresentar();
+            System.out.println("##### Desafiante ##########");
+            this.desafiante.apresentar();
+            Random aletorio = new Random();
+            int vencedor = aletorio.nextInt(3);
+            switch (vencedor) {
+                case 0: // Empate
+                    this.desafiado.empatar();
+                    this.desafiante.empatar();
+
+                    break;
+                case 1: // vence
+                    System.out.println("Deafiante ganhou" + this.desafiante.getNome());
+                    desafiante.ganharLuta();
+                    desafiado.perderLuta();
+                    break;
+                case 2: // perde
+                    System.out.println("Desafiado ganhou" + this.desafiado.getNome());
+                    desafiante.perderLuta();
+                    desafiante.ganharLuta();
+                    break;
+            }
         }else {
 
          System.out.println("luta não pode acontecer");

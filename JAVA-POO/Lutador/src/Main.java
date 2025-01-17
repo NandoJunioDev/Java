@@ -34,5 +34,17 @@ public class Main {
           12,2,4
         );
         lutador[5].apresentar();
+
+        Luta  Ufc1 = new Luta();
+            Ufc1.marcarLuta(lutador[2],lutador[1]);
+            Ufc1.lutar();
+            lutador[2].status();
+            lutador[1].status();
     }
+
+
+
+
+    Luta  Ufc1 = new Luta();
+
 }
