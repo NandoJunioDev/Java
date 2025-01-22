@@ -2,18 +2,18 @@ public class Main {
     public static void main(String[] args) {
         System.out.println("Hello, World!");
 
-        Pessoas p1 = new Pessoas("Fernando Junio",23,"Masculino");
-        Livros l1 = new Livros("Seda","Desconhecido", 200);
-        l1.setLeitor(p1);
-        l1.abrir();
+        Pessoas [] pessoas = new Pessoas[1000];
+        Livros [] livros = new Livros[1000];
+        pessoas[0] =  new Pessoas(
+                "ana julia",22,"Binarie");
+        pessoas [1] = new Pessoas("bela", 22 ,"lgbt");
+
+        livros[0] = new Livros(
+                "barbie","disney",100);
 
 
-        l1.avancaPagina();
-        l1.avancaPagina();
-        l1.folhar();
-        l1.Detalhes();
-
-
+        livros[0].setLeitor(pessoas[1]);
+        livros[0].Detalhes();
 
     }
 }
