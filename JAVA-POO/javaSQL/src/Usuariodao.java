@@ -7,11 +7,11 @@ import java.util.Objects;
 public class Usuariodao {
 
 
-    public void cadastrar (Aluno aluno ){
-        String sql = "INSERT INTO NEW_TABLE  (MATRICULA,NOME,ENTRADA) VALUE (?, ?, ?)";
+    public void cadastrar (@org.jetbrains.annotations.NotNull Aluno aluno ){
+        String sql = "INSERT INTO aluno  (MATRICULA,NOME,DATA) VALUE (?, ?, ?)";
         PreparedStatement ps = null;
         try {
-            ps = Objects.requireNonNull(Conexao.getConexao()).prepareStatement(sql);
+            ps = Conexao.getConexao().prepareStatement(sql);
             ps.setString(1, aluno.getMatricula());
             ps.setString(2, aluno.getNome());
             ps.setString(3, aluno.getData());

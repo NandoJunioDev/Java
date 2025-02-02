@@ -4,28 +4,13 @@ import java.sql.SQLException;
 
 public class Conexao {
 
-        private static final  String url = "jdbc:mysql://localhost:3306/teste";
+        private static final  String url = "jdbc:mysql://root:oaXqiYFhZyfLMLbjekZGYIeQzCJBZLqE@roundhouse.proxy.rlwy.net:13549/railway";
         private  static  final  String user = "root";
-        private static  final String senha = "1234";
+        private static  final String senha = "oaXqiYFhZyfLMLbjekZGYIeQzCJBZLqE"; // dUFCpCBDkJYwdPzLwxHhTJfAUPAuSRZT
 
         private static Connection conn;
 
-        public static  Connection getConexao(){
-               try {
-                     if (conn == null){
-                             conn = DriverManager.getConnection(url,user,senha);
-                             return  conn;
-                     }else {
-                             return conn;
-                     }
-               }catch (SQLException e ){
-                        e.printStackTrace();
-                        return null;
-               }
 
+        public static Connection getConexao() {
         }
-
-
-
-
 }

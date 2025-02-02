@@ -1,12 +1,16 @@
 public class Aluno {
-    private String matricula;
-    private  String nome;
-    private  String data;
+
+    public  String matricula;
+    public String nome;
+    public String data;
 
     public Aluno(String matricula, String nome, String data) {
         this.matricula = matricula;
         this.nome = nome;
         this.data = data;
+    }
+    public Aluno(){
+
     }
 
     public String getMatricula() {
@@ -33,3 +37,5 @@ public class Aluno {
         this.data = data;
     }
 }
+
+
