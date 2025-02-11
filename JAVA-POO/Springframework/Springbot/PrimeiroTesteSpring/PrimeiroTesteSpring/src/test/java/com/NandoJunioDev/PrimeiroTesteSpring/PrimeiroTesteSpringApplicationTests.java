@@ -1,10 +1,10 @@
-package teste.primeiroTeste;
+package com.NandoJunioDev.PrimeiroTesteSpring;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class PrimeiroTesteApplicationTests {
+class PrimeiroTesteSpringApplicationTests {
 
 	@Test
 	void contextLoads() {

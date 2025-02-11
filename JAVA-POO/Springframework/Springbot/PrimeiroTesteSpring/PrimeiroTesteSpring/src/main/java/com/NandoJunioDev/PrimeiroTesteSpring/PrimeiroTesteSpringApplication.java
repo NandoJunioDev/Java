@@ -1,13 +1,13 @@
-package teste.primeiroTeste;
+package com.NandoJunioDev.PrimeiroTesteSpring;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class PrimeiroTesteApplication {
+public class PrimeiroTesteSpringApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(PrimeiroTesteApplication.class, args);
+		SpringApplication.run(PrimeiroTesteSpringApplication.class, args);
 	}
 
 }
