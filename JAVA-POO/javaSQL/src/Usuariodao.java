@@ -7,6 +7,7 @@ import java.util.Objects;
 public class Usuariodao {
 
 
+
     public void cadastrar (@org.jetbrains.annotations.NotNull Aluno aluno ){
         String sql = "INSERT INTO aluno  (MATRICULA,NOME,DATA) VALUE (?, ?, ?)";
         PreparedStatement ps = null;
