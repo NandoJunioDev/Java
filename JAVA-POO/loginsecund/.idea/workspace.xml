@@ -5,8 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="76b1db78-a8bf-416c-994c-b875f06c471f" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../javaSQL/src/Usuariodao.java" beforeDir="false" afterPath="$PROJECT_DIR$/../javaSQL/src/Usuariodao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../login (1)/login/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../login (1)/login/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/loginsecund/src/main/java/loginsecund/ClienteViewControler/ClienteViewControler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Java Abstracao/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Java Abstracao/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/loginsecund/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/loginsecund/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,12 +19,19 @@
   <component name="ComposerSettings">
     <execution />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 7
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 7
+}</component>
   <component name="ProjectId" id="2tMew8SqNpRqs05OUho2dhG0kS0" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -29,20 +39,39 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
+    "Spring Boot.LoginsecundApplication.executor": "Run",
     "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Vs/Java/JAVA-POO/loginsecund",
+    "last_opened_file_path": "E:/JAVA/Curso em video/Java/JAVA-POO/loginthird",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RunManager">
+    <configuration name="LoginsecundApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
+      <module name="loginsecund" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="loginsecund.LoginsecundApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-jdk-9823dce3aa75-125ca727e0f0-intellij.indexing.shared.core-IU-243.24978.46" />
-        <option value="bundled-js-predefined-d6986cc7102b-76f8388c3a79-JavaScript-IU-243.24978.46" />
+        <option value="bundled-jdk-9823dce3aa75-125ca727e0f0-intellij.indexing.shared.core-IU-243.23654.189" />
+        <option value="bundled-js-predefined-d6986cc7102b-822845ee3bb5-JavaScript-IU-243.23654.189" />
       </set>
     </attachedChunks>
   </component>
@@ -55,6 +84,9 @@
       <option name="presentableId" value="Default" />
       <updated>1740166608654</updated>
       <workItem from="1740166610358" duration="52000" />
+      <workItem from="1740318443496" duration="211000" />
+      <workItem from="1740339161727" duration="25000" />
+      <workItem from="1740342191769" duration="897000" />
     </task>
     <servers />
   </component>
