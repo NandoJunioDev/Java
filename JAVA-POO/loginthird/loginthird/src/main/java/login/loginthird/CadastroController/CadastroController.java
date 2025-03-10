@@ -25,6 +25,6 @@ public class CadastroController {
         cadastro.setNome(nome);
         usuarioService.cadastrar(cadastro);
 
-        return "redirect:/index";
+        return "redirect:/login";
     }
 }
