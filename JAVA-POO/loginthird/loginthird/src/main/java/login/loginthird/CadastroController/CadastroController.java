@@ -17,12 +17,13 @@ public class CadastroController {
     @Autowired
     private UsuarioService usuarioService;
 
-    @RequestMapping(value = "/cadastro",method = RequestMethod.POST)
-    public String cadastrar(@RequestParam String nome, @RequestParam String email)
+    @RequestMapping(value = "/singup",method = RequestMethod.POST)
+    public String cadastrar(@RequestParam String nome,@RequestParam sobrenome,  @RequestParam String email, @RequestParam senha)
     {
         Cadastros cadastro = new Cadastros();
         cadastro.setEmail(email);  // Setando o email
         cadastro.setNome(nome);
+        cadastro.se
         usuarioService.cadastrar(cadastro);
 
         return "redirect:/login";
