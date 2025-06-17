@@ -10,11 +10,11 @@ public class Bolsista  extends Aluno{
     }
 
     public  void renovarBolsa (){
-        System.out.printf ("renobando");
+        System.out.printf ("renobando bolsa" + getNome ());
     }
     @Override
     public  void pagarMensalidade(){
-        System.out.printf (this.getNome ()+ "ele é bolsista");
+        System.out.printf (this.getNome ()+ "ele é bolsista pamento facilitado ");
     }
 
 }
